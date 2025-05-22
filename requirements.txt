@@ -1,2 +1,12 @@
-speechbrain
+fastapi
 torchaudio
+transformers
+typing
+os
+huggingface_hub
+torch
+streamlit
+pydub
+gdown
+huggingface_hub
+pydantic
