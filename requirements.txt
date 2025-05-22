@@ -1,8 +1,6 @@
 fastapi
 torchaudio
 transformers
-typing
-os
 huggingface_hub
 torch
 streamlit
