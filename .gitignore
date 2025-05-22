@@ -1,0 +1,11 @@
+*.pt
+*.json
+*.jpg
+
+runs/
+results/
+images/
+pretrained_models/
+__pycache__/
+.aws/
+.env
