@@ -73,8 +73,8 @@ async def accent_classification(data: DataInput):
     # Step 1: Download MP4
 
     video_url = str(data.video_url[0])
-    video_path = "./backend/tmp_files/video.mp4"
-    audio_path = "./backend/tmp_files/audio.wav"
+    video_path = "./backend/utils/video.mp4"
+    audio_path = "./backend/utils/audio.wav"
     gdown.download(video_url, video_path ,quiet=False, fuzzy=True)
 
     # Step 2: Extract audio to WAV
