@@ -93,6 +93,7 @@ async def accent_classification(data: DataInput):
     try:
         pipe = pipeline("audio-classification", model=local_model_dir)
         scores = pipe(audio_path)
+        top_scores = sorted(scores, key=lambda x: x['score'], reverse=True)[:3]
     except Exception as e:
         return {"error": f"Inference failed: {str(e)}"}
 
@@ -103,4 +104,7 @@ async def accent_classification(data: DataInput):
     end = time.time()
     prediction_time = int((end-start)*1000)
 
-    return scores
+    return {
+        "top_3_predictions": top_scores,
+        "prediction_time_ms": prediction_time
+    }
