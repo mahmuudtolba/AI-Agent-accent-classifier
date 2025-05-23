@@ -1,10 +1,9 @@
 fastapi
-torchaudio
+streamlit
 transformers
 huggingface_hub
-torch
-streamlit
-pydub
-gdown
-huggingface_hub
 pydantic
+gdown
+pydub
+torch
+torchaudio

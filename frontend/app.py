@@ -3,8 +3,8 @@ import streamlit as st
 import requests
 
 # Define the API endpoint
-CHECK_MODEL_URL = "http://localhost:8000/api/v1/check_model"
-PREDICT_URL = "http://localhost:8000/api/v1/accent_classification"
+CHECK_MODEL_URL = "http://localhost:8502/api/v1/check_model"
+PREDICT_URL = "http://localhost:8502/api/v1/accent_classification"
 
 headers = {
   'Content-Type': 'application/json'
