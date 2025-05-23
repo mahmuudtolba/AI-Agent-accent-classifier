@@ -51,6 +51,7 @@ This project provides an accent classification API service powered by a deep lea
     "video_url": ["https://example.com/path/to/audio.wav"]
   }
   ```
+  here are examples : https://drive.google.com/drive/folders/1wUwfN06WfQSaltLu2WnfDy7GSgnMEjAH?usp=drive_link
 
   The API will process the audio and respond with a JSON object containing the predicted accent(s) and confidence score(s). Example response (conceptual):
 
